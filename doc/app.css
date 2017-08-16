@@ -1,0 +1,151 @@
+/* app css stylesheet */
+
+.menu {
+    list-style: none;
+    border-bottom: 0.1em solid black;
+    margin-bottom: 2em;
+    padding: 0 0 0.5em;
+}
+
+.menu:before {
+    content: "[";
+}
+
+.menu:after {
+    content: "]";
+}
+
+.menu > li {
+    display: inline;
+}
+
+.menu > li + li:before {
+    content: "|";
+    padding-right: 0.3em;
+}
+
+/*list block style*/
+header {
+    position: fixed;
+    background-color: #000000;
+    color: white;
+    width: 100%;
+    z-index: 1;
+    top: 0;
+    left: 0;
+}
+
+body {
+    padding-top: 100px;
+    background: url("img/bg.png") repeat;
+}
+
+h2 {
+    background-color: black;
+    color: white !important;
+    font-weight: normal !important;
+    font-size: 26px !important;
+    padding-left: 10px;
+}
+
+h2 button.btn-outline-danger {
+    background-color: white;
+}
+
+h2.editing form.editForm {
+    display: block;
+}
+
+h2.editing span {
+    display: none;
+}
+
+h2 form.editForm {
+    display: none;
+}
+
+.created-label {
+    font: italic normal 16px serif;
+}
+
+/*todo*/
+li.editing .todoItem {
+    display: none;
+}
+
+li.editing .todoItemEdit {
+    display: block;
+}
+
+li .todoItemEdit {
+    display: none;
+}
+
+li .todoItem {
+    display: block;
+    word-break: break-all;
+}
+
+.border-bottom-grey {
+    border-bottom: solid 1px white;
+}
+
+.border-bottom-grey button {
+    width: 30%;
+    color: white;
+}
+
+.form-wrap {
+    width: 500px;
+    float: right;
+    text-align: left;
+}
+
+.form-wrap label {
+    color: white;
+}
+
+.form-wrap form button {
+    color: white;
+}
+
+.form-wrap .nav-link {
+    color: white;
+}
+
+footer {
+    width: 100%;
+    position: fixed;
+    color: white;
+    left: 0;
+    bottom: 0;
+}
+
+footer ul {
+    list-style-type: none;
+}
+
+footer li {
+    display: inline-block;
+}
+
+.btn-outline-custom {
+    border: solid 1px white !important;
+    background: transparent;
+}
+
+.btn-outline-custom:hover {
+    border: solid 1px white !important;
+    background-color: white;
+    color: black;
+}
+
+.btn-outline-custom:focus {
+    border: solid 1px #4d90fe !important;
+    background-color: white;
+    color: black;
+}
+
+.itemBloc {
+    background-color: white;
+}
